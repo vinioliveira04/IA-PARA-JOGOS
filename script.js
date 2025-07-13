@@ -65,7 +65,6 @@ const perguntarAI = async (question, game, apiKey) =>{
     const data = await response.json()
     return data.candidates[0].content.parts[0].text
 }
-//AIzaSyDLx0YsswgkJHA6dIt5Os3bUXZ5-NNy1bQ
 const enviarFormulario = async (event) => {
     event.preventDefault()
     const apiKey = apiKeyInput.value
